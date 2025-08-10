@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programmes - SimplonCode</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="assets/logo.png" alt="Logo SimplonCode" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="programmes.html" class="active">Programmes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="programmes-section">
+      <h1>Nos Programmes de Formation</h1>
+      <div id="programmes-list" class="programmes-container">
+      </div>
+    </section>
+
+    <section id="add-programme">
+      <h2>Ajouter un Programme</h2>
+      <form id="programme-form">
+        <input type="text" id="titre" placeholder="Titre" required />
+        <textarea id="description" placeholder="Description" required></textarea>
+        <input type="text" id="duree" placeholder="Durée (ex: 12 semaines)" required />
+        <input type="text" id="competences" placeholder="Compétences (séparées par des virgules)" required />
+        <button type="submit" class="btn">Ajouter</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 SimplonCode</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com" target="_blank"><img src="assets/ln.png" alt="LinkedIn" /></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="assets/tw.png" alt="Twitter" /></a>
+        <a href="https://www.github.com" target="_blank"><img src="assets/git.png" alt="GitHub" /></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="assets/fb.png" alt="Facebook" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/programmes.js"></script>
+</body>
+</html>

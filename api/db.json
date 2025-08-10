@@ -1,0 +1,38 @@
+{
+  "programmes": [
+    {
+      "id": "1",
+      "titre": "Développement Web",
+      "description": "Apprenez HTML, CSS, JavaScript et les bases du backend.",
+      "duree": "12 semaines",
+      "competences": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "2",
+      "titre": "Data Science",
+      "description": "Analyse et traitement des données avec Python.",
+      "duree": "16 semaines",
+      "competences": [
+        "Python",
+        "Pandas",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": "16c6",
+      "titre": "Intelligence Artificielle",
+      "description": "Maîtrisez les concepts clés de l'IA : réseaux de neurones, traitement du langage naturel et vision par ordinateur.",
+      "duree": "20 semaines",
+      "competences": [
+        "Python",
+        "TensorFlow",
+        "NLP",
+        "Computer Vision"
+      ]
+    }
+  ]
+}

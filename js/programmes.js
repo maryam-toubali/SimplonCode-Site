@@ -2,7 +2,6 @@ const API_URL = "http://localhost:3000/programmes";
 const programmesList = document.getElementById("programmes-list");
 const form = document.getElementById("programme-form");
 
-// Charger les programmes existants
 const loadProgrammes = () => {
   axios.get(API_URL)
     .then(res => {
@@ -23,7 +22,6 @@ const loadProgrammes = () => {
     .catch(err => console.log("Erreur de chargement des programmes", err));
 };
 
-// Ajouter un programme
 form.addEventListener("submit", e => {
   e.preventDefault();
 

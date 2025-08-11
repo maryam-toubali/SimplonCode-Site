@@ -23,15 +23,50 @@
       ]
     },
     {
-      "id": "16c6",
+      "id": "fcc1",
       "titre": "Intelligence Artificielle",
-      "description": "Maîtrisez les concepts clés de l'IA : réseaux de neurones, traitement du langage naturel et vision par ordinateur.",
-      "duree": "20 semaines",
+      "description": "Initiez-vous au Machine Learning et au Deep Learning pour créer des modèles prédictifs.",
+      "duree": "16 semaines",
       "competences": [
         "Python",
+        "Pandas",
         "TensorFlow",
-        "NLP",
-        "Computer Vision"
+        "Scikit-learn"
+      ]
+    },
+    {
+      "id": "1755",
+      "titre": "Cybersécurité",
+      "description": "Maîtrisez les bases de la sécurité informatique et apprenez à protéger les systèmes contre les attaques.",
+      "duree": "10 semaines",
+      "competences": [
+        "Sécurité réseau",
+        "Analyse de vulnérabilités",
+        "Cryptographie"
+      ]
+    },
+    {
+      "id": "75c3",
+      "titre": "Design UX/UI",
+      "description": "Concevez des interfaces utilisateur intuitives et esthétiques avec les meilleurs outils du marché.",
+      "duree": " 8 semaines",
+      "competences": [
+        "Figma",
+        "Adobe XD",
+        "Principes UX",
+        "Design Systems"
+      ]
+    },
+    {
+      "id": "be86",
+      "titre": "Intelligence Artificielle",
+      "description": "TEST TEST TEST ",
+      "duree": "16 semaines",
+      "competences": [
+        "Python",
+        "Pandas",
+        "TensorFlow",
+        "Scikit-learn"
       ]
     }
   ]

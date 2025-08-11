@@ -21,28 +21,39 @@
     </div>
   </header>
 
-  <section id="contact">
-    <h1>Contactez-nous</h1>
-
-    <div class="contact-info">
+<section id="contact">
+  <div class="contact-container">
+    <!-- Colonne gauche -->
+    <div class="contact-left">
+      <h2>Nos coordonnées</h2>
       <p><strong>Adresse :</strong> 4ème étage, Numéro26, Sis Immeuble Walili Street, 42 Bd Abdelmoumen, Casablanca 20340</p>
       <p><strong>Téléphone :</strong> 0520846371</p>
+      <p><strong>Email :</strong> contact@simploncode.com</p>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.836987192313!2d2.2922926156743776!3d48.85884407928792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fda2b9b4b27%3A0x6d5c3d4e02a9f3d7!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1672929099098!5m2!1sfr!2sfr"
+          width="100%"
+          height="250"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
     </div>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre email" required>
-      <textarea placeholder="Votre message" rows="5" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/"
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
+    <!-- Colonne droite -->
+    <div class="contact-right">
+      <h2>Contactez-nous</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nom complet" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer>
     <div class="footer-content">

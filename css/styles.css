@@ -60,6 +60,8 @@ header {
   align-items: center;
   justify-content: center;
   color: var(--text);
+  background-color: #1a1a1a3b;
+  background-image: url('../assets/hero-bg.gif');
   text-align: center;
   padding: 0 2rem;
 }
@@ -135,6 +137,47 @@ section p {
   margin: 0 auto;
 }
 
+/* Section Présentation */
+#presentation {
+  background-color: #111;
+  padding: 4rem 5%;
+}
+
+#presentation .presentation-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+#presentation .presentation-item {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+#presentation .presentation-item h3 {
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+#presentation .presentation-item p,
+#presentation .presentation-item ul {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+#presentation .presentation-item ul {
+  padding-left: 1.2rem;
+}
+
+#presentation .presentation-item ul li {
+  margin-bottom: 0.5rem;
+}
+
 .reasons {
   display: flex;
   justify-content: space-around;
@@ -166,47 +209,97 @@ section p {
   color: #ccc;
 }
 
-/* Styles Programmes */
+/* Programmes page */
+#programmes-section {
+  padding: 4rem 5%;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+#programmes-section h1 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
 .programmes-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
+  gap: 2rem;
 }
 
 .programme-card {
-  background-color: #111;
+  background-color: #1e1e1e;
   padding: 1.5rem;
-  border: 1px solid #ce0033;
-  border-radius: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(206, 0, 51, 0.3);
 }
 
 .programme-card h3 {
-  color: #ce0033;
+  color: var(--primary);
   margin-bottom: 0.5rem;
 }
 
+.programme-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* === Formulaire ajout programme === */
 #add-programme {
-  padding: 2rem;
+  padding: 4rem 5%;
+  background-color: #181818;
+  color: #fff;
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+}
+
+#add-programme h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+#programme-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #programme-form input,
 #programme-form textarea {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.8rem;
-  background-color: #222;
-  border: 1px solid #444;
+  background-color: #2a2a2a;
   color: #fff;
+  border: 1px solid #444;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+#programme-form input::placeholder,
+#programme-form textarea::placeholder {
+  color: #888;
 }
 
 #programme-form button {
-  background-color: #ce0033;
-  color: white;
-  padding: 0.8rem 2rem;
+  background-color: var(--primary);
+  color: #fff;
   border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
+
 #programme-form button:hover {
   background-color: #a00027;
 }
@@ -214,33 +307,51 @@ section p {
 /* Contact page */
 #contact {
   padding: 3rem 5%;
-  text-align: center;
+  background-color: #121212;
+  color: #fff;
 }
 
-.contact-info p {
-  margin-bottom: 0.5rem;
+.contact-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  min-width: 300px;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-left h2, .contact-right h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  margin: 0.5rem 0;
 }
 
 .contact-form {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact-form input,
 .contact-form textarea {
   padding: 0.8rem;
-  border: none;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
   border-radius: 5px;
+  color: #fff;
 }
 
 .contact-form button {
   background-color: var(--primary);
-  color: white;
+  color: #fff;
   padding: 0.8rem;
   border: none;
   border-radius: 5px;
@@ -251,8 +362,8 @@ section p {
   background-color: #a00027;
 }
 
-.map-container {
-  margin-top: 2rem;
+.map-container iframe {
+  border-radius: 10px;
 }
 
 .nav-links a.active {
@@ -269,3 +380,14 @@ section p {
   }
 }
 
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .programmes-container {
+    grid-template-columns: 1fr;
+  }
+}
